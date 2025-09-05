@@ -46,10 +46,7 @@ By the end of the course, students will be able to:
 ```
 .
 ├── week01/
-│   ├── lecture.pdf
-│   ├── hands_on.ipynb
-│   ├── hands_on_solution.ipynb
-│   └── autonomous_activity.ipynb
+│   ├── lecture_intro.pdf
 │
 ├── week02/
 │   ├── lecture.pdf
