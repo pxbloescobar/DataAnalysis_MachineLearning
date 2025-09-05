@@ -42,29 +42,49 @@ By the end of the course, students will be able to:
 
 ## 🧪 Repository Layout
 
+
 ```
 .
-├── notebooks/
-│   ├── 01_intro/
-│   ├── 02_dimensionality_reduction/      # PCA, SVD, t‑SNE, UMAP, AE latents
-│   ├── 03_time_series_fourier_wavelets/
-│   ├── 04_monte_carlo/
-│   ├── 05_ml_basics_cv/
-│   ├── 06_cnns_autoencoders_images/
-│   ├── 07_pinns_pdes/
-│   ├── 09_segmentation_embeddings/
-│   └── 10_generative_vae_gan_transfer/
-├── src/                                   # reusable Python modules
-├── data/
-│   ├── raw/                               # (excluded from repo if large)
-│   ├── interim/
-│   └── processed/
-├── reports/
-│   ├── midterm/
-│   └── final/
-├── env/                                   # environment files
+├── week01/
+│   ├── lecture.pdf
+│   ├── hands_on.ipynb
+│   ├── hands_on_solution.ipynb
+│   └── autonomous_activity.ipynb
+│
+├── week02/
+│   ├── lecture.pdf
+│   ├── hands_on.ipynb
+│   ├── hands_on_solution.ipynb
+│   └── autonomous_activity.ipynb
+│
+├── ...
+│
+├── week16/
+│   ├── lecture.pdf
+│   ├── hands_on.ipynb
+│   ├── hands_on_solution.ipynb
+│   └── autonomous_activity.ipynb
+│
+├── projects/
+│   ├── README.md
+│   ├── project01/
+│   │   ├── data/
+│   │   ├── src/
+│   │   └── notebooks/
+│   ├── project02/
+│   │   ├── data/
+│   │   ├── src/
+│   │   └── notebooks/
+│   ├── ...
+│   └── project05/
+│       ├── data/
+│       ├── src/
+│       └── notebooks/
+│
+├── env/
 │   ├── environment.yml
 │   └── requirements.txt
+│
 ├── CITATION.cff
 ├── LICENSE
 └── README.md
@@ -100,13 +120,7 @@ sympy
 jupyter
 ipykernel
 
-# Deep learning (choose one stack or both as needed)
-# Uncomment the appropriate lines for your platform
-# torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-# tensorflow
 
-# PINNs and extras
-deepxde
 ```
 
 ### Option B — Google Colab
@@ -126,15 +140,7 @@ jupyter lab  # or jupyter notebook
 # 3) Open notebooks under notebooks/02_dimensionality_reduction and run cells
 ```
 
----
 
-## 📚 Datasets
-
-- Small demo datasets are fetched automatically by scikit‑learn (e.g., digits).  
-- Physics‑oriented examples (images/time series/PDEs) are referenced in each notebook with reproducible download cells.  
-- Place larger datasets under `data/raw/` and use provided preprocessing scripts to create `data/processed/`.
-
----
 
 ## 🔬 Reproducibility & Good Practices
 - Use **GitHub Issues** for task tracking; each PR must include:
@@ -162,13 +168,6 @@ jupyter lab  # or jupyter notebook
 - If you use these materials in academic work, please cite the course and include a link to this repository.  
 - Course alignment and official information are based on the PHYMSCFUN02 syllabus.
 
----
-
-## 🗺️ Roadmap (selected)
-- [ ] Expand **02_dimensionality_reduction** with side‑by‑side PCA vs. SVD vs. UMAP diagnostics.  
-- [ ] Add **PINNs** baseline notebook (Poisson/heat equation) with boundary conditioning.  
-- [ ] Provide scripts for reproducible **Monte Carlo** experiments (diffusion, first‑passage).  
-- [ ] Integrate dataset cards with licenses and checksums.
 
 ---
 
